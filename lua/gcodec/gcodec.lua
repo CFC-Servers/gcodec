@@ -45,5 +45,5 @@ include ("source/mdlreader.lua")
 GCodec.AddReloadCommand ("gcodec/gcodec.lua", "gcodec", "GCodec")
 
 if CLIENT and GetConVar("is_gcompute_user"):GetBool() then
-	GCodec.IncludeDirectory ("gcodec/ui")
+	GCodec.IncludeDirectoryAsync ("gcodec/ui")
 end
